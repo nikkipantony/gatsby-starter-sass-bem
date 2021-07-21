@@ -27,7 +27,7 @@ const BrandColors = () => {
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            {/* Edit brand color description to personal for your design system ↓ */}
+            {/* Edit brand color description for your design system ↓ */}
             <p>
                 These are example brand colors. Brand colors are a chosen color
                 palette used to represent a certain company. A consistent and

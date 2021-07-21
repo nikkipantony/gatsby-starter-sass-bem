@@ -27,7 +27,13 @@ const ActionColors = () => {
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            <p>Description.</p>
+            {/* Edit action color description for your design system ↓ */}
+            <p>
+                These are example action colors. Action colors are semantic
+                colors used to communicate to a user with a specific purpose.
+                For example, Green has a positive connotation so it is commonly
+                used as an action color to convey success.
+            </p>
 
             <div
                 style={{
