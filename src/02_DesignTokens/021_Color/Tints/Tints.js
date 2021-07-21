@@ -26,7 +26,7 @@ const Tints = () => {
 
     return (
         <section>
-            <h3 style={Title}>{TokenName}</h3>
+            <h2 style={Title}>{TokenName}</h2>
             <p>Description.</p>
 
             <div
@@ -42,9 +42,9 @@ const Tints = () => {
                 {data.designTokensJson.mapValue.map(node => (
                     <figure
                         style={{
-                            margin: "0 50px 10px 30px",
-                            minWidth: "280px",
-                            maxWidth: "280px",
+                            margin: "0 36px 10px 30px",
+                            minWidth: "200px",
+                            maxWidth: "200px",
                         }}
                     >
                         <div
@@ -52,7 +52,7 @@ const Tints = () => {
                                 borderRadius: "4px",
                                 border: "2px solid #000013",
                                 boxShadow: "rgba(0, 0, 0, 0.1) 0 4px 6px 0",
-                                backgroundColor: "#ffd700",
+                                backgroundColor: "#18d14c",
                             }}
                         >
                             <div
@@ -74,7 +74,7 @@ const Tints = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            tint(brand-color(gold), {node.name})
+                            tint(brand-color(success), {node.name})
                         </figcaption>
                     </figure>
                 ))}
@@ -97,7 +97,7 @@ const Tints = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    tint(brand-color(gold), {node.name})
+                                    tint(brand-color(success), {node.name})
                                 </span>
                             </td>
                             <td>
@@ -113,7 +113,7 @@ const Tints = () => {
                                 <pre style={{ margin: 0 }}>
                                     <code>
                                         background-color:
-                                        tint(brand-color(gold),
+                                        tint(brand-color(success),
                                         {node.name});
                                     </code>
                                 </pre>

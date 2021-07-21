@@ -26,7 +26,7 @@ const BrandColors = () => {
 
     return (
         <section>
-            <h3 style={Title}>{TokenName}</h3>
+            <h2 style={Title}>{TokenName}</h2>
             <p>Description.</p>
 
             <div
@@ -42,9 +42,9 @@ const BrandColors = () => {
                 {data.designTokensJson.mapValue.map(node => (
                     <figure
                         style={{
-                            margin: "0 50px 10px 30px",
-                            minWidth: "280px",
-                            maxWidth: "280px",
+                            margin: "0 36px 10px 30px",
+                            minWidth: "200px",
+                            maxWidth: "200px",
                         }}
                     >
                         <div

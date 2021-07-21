@@ -26,7 +26,7 @@ const Opacity = () => {
 
     return (
         <section>
-            <h3 style={Title}>{TokenName}</h3>
+            <h2 style={Title}>{TokenName}</h2>
             <p>Description.</p>
 
             <div
@@ -42,9 +42,9 @@ const Opacity = () => {
                 {data.designTokensJson.mapValue.map(node => (
                     <figure
                         style={{
-                            margin: "0 50px 10px 30px",
-                            minWidth: "280px",
-                            maxWidth: "280px",
+                            margin: "0 36px 10px 30px",
+                            minWidth: "200px",
+                            maxWidth: "200px",
                         }}
                     >
                         <div
@@ -58,11 +58,16 @@ const Opacity = () => {
                                 style={{
                                     height: "120px",
                                     width: "100%",
-                                    backgroundColor: "#000013",
                                     borderRadius: "1px",
                                     opacity: `${node.compiledValue}`,
+                                    display: "grid",
+                                    backgroundColor: "#18d14c",
                                 }}
-                            ></div>
+                            >
+                                <div style={{ margin: "auto" }}>
+                                    <b>Opacity</b>
+                                </div>
+                            </div>
                         </div>
                         <figcaption
                             style={{
