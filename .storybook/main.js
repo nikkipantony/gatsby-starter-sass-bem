@@ -56,7 +56,7 @@ module.exports = {
 
             // Use babel-plugin-remove-graphql-queries to remove graphql queries from components when rendering in storybook
             // While still rendering content from useStaticQuery in development mode
-            // TODO Fix useStaticQuery content not rendering when built
+            // TODO Fix useStaticQuery content not rendering in production
             [
                 require.resolve("babel-plugin-remove-graphql-queries"),
                 {
