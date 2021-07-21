@@ -27,7 +27,14 @@ const Opacity = () => {
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            <p>Description.</p>
+            {/* Edit opacity description to be specific to your design system ↓ */}
+            <p>
+                These are example opacity values. In design opacity refers to
+                how transparent an object is. Objects with lower opacity allow
+                more light to pass through them, therefore becoming more
+                see-through. The more solid an object is, the less light that
+                can pass through it which translates to a higher opacity.
+            </p>
 
             <div
                 style={{
