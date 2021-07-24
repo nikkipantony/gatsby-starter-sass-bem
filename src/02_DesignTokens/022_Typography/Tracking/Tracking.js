@@ -26,12 +26,12 @@ const Tracking = () => {
 
     return (
         <section>
-            <h3 style={Title}>{TokenName}</h3>
-            <p>Description.</p>
+            <h2 style={Title}>{TokenName}</h2>
+            <p className="css-1p8ieni">Description.</p>
 
             <div
                 style={{
-                    marginBottom: "-20px",
+                    marginBottom: "40px",
                 }}
             >
                 {data.designTokensJson.mapValue.map(node => (
@@ -40,6 +40,7 @@ const Tracking = () => {
                             letterSpacing: `${node.compiledValue}`,
                             fontWeight: 700,
                             fontSize: "2rem",
+                            marginBottom: "16px",
                         }}
                     >
                         Tracking {node.compiledValue}

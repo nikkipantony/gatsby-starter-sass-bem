@@ -1,5 +1,5 @@
 /*
- * Typography Styles
+ * Typography Decisions Styles
  *
  */
 
@@ -68,6 +68,7 @@ p {
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
     padding-bottom: spacing(l);
+    margin: spacing(l) 0 spacing(xl);
 }
 
 // Anchor Links

@@ -28,7 +28,7 @@ const Gradients = () => {
         <section>
             <h2 style={Title}>{TokenName}</h2>
             {/* Edit gradients description to be specific to your design system ↓ */}
-            <p>
+            <p className="css-1p8ieni">
                 These are example color gradients. Gradients can be used within
                 user interfaces when being built with design systems to give
                 more creative freedom to designers. While flat colors brings

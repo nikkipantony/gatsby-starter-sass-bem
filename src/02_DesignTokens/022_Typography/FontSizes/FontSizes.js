@@ -26,12 +26,12 @@ const FontSizes = () => {
 
     return (
         <section>
-            <h3 style={Title}>{TokenName}</h3>
-            <p>Description.</p>
+            <h2 style={Title}>{TokenName}</h2>
+            <p className="css-1p8ieni">Description...</p>
 
             <div
                 style={{
-                    marginBottom: "-20px",
+                    marginBottom: "40px",
                 }}
             >
                 {data.designTokensJson.mapValue.map(node => (
@@ -40,6 +40,7 @@ const FontSizes = () => {
                             fontWeight: 700,
                             fontSize: `${node.compiledValue}`,
                             lineHeight: 1,
+                            marginBottom: "16px",
                         }}
                     >
                         {node.name} {node.compiledValue}
