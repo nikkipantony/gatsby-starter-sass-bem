@@ -24,36 +24,57 @@ const FontSizes = () => {
         lineHeight: "1",
     }
 
+    const TableHeading = {
+        textTransform: "capitalize",
+    }
+
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            <p className="css-1p8ieni">Description...</p>
+            <p className="css-1p8ieni">
+                The `font-size` CSS property sets the size of a font. Changing a
+                font size also updates the sizes of the font size-relative
+                length units, such as `em`.
+            </p>
 
             <div
                 style={{
                     marginBottom: "40px",
                 }}
             >
-                {data.designTokensJson.mapValue.map(node => (
-                    <p
-                        style={{
-                            fontWeight: 700,
-                            fontSize: `${node.compiledValue}`,
-                            lineHeight: 1,
-                            marginBottom: "16px",
-                        }}
-                    >
-                        {node.name} {node.compiledValue}
-                        <span
-                            style={{
-                                fontSize: "1.125rem",
-                                marginLeft: "14px",
-                            }}
-                        >
-                            font-size({node.name})
-                        </span>
-                    </p>
-                ))}
+                <table
+                    className="docblock-argstable css-6hhrgj"
+                    style={{ textAlign: "left" }}
+                >
+                    <thead className="docblock-argstable-head">
+                        <tr>
+                            <th style={TableHeading}>{TokenName}</th>
+                        </tr>
+                    </thead>
+                    <tbody className="docblock-argstable-body">
+                        <tr>
+                            <td className="css-4lbn0a">
+                                <span className="css-in3yi3">
+                                    {data.designTokensJson.mapValue.map(
+                                        node => (
+                                            <p
+                                                style={{
+                                                    fontWeight: 700,
+                                                    fontSize: `${node.compiledValue}`,
+                                                    lineHeight: 1,
+                                                    marginBottom: "16px",
+                                                }}
+                                            >
+                                                Font Size {node.name}{" "}
+                                                {node.compiledValue}
+                                            </p>
+                                        )
+                                    )}
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <table
