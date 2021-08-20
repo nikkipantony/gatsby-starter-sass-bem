@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Canvas } from "@storybook/addon-docs"
 
 const Tracking = () => {
     const data = useStaticQuery(graphql`
@@ -18,45 +19,54 @@ const Tracking = () => {
     const Name = VariableName.substring(1) // Remove `$` from variable name
     const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
 
-    const Title = {
-        textTransform: "capitalize",
-        marginTop: "80px",
-        marginBottom: "10px",
-        lineHeight: "1",
-    }
-
     return (
         <>
-            <h2 style={Title}>{TokenName} Tokens</h2>
-            <p className="css-1p8ieni">Description.</p>
-
-            <div
+            <h2
                 style={{
-                    marginBottom: "40px",
+                    textTransform: "capitalize",
+                    marginTop: "80px",
+                    marginBottom: "10px",
+                    lineHeight: "1",
                 }}
             >
-                {data.designTokensJson.mapValue.map(node => (
-                    <p
-                        style={{
-                            letterSpacing: `${node.compiledValue}`,
-                            fontWeight: 700,
-                            fontSize: "2rem",
-                            marginBottom: "16px",
-                        }}
-                    >
-                        Tracking {node.compiledValue}
-                        <span
+                {TokenName} Tokens
+            </h2>
+            <p className="css-1p8ieni">Description.</p>
+
+            <Canvas
+                style={{
+                    margin: "0",
+                }}
+            >
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+                    {data.designTokensJson.mapValue.map(node => (
+                        <p
                             style={{
-                                letterSpacing: "normal",
-                                fontSize: "1.125rem",
-                                marginLeft: "14px",
+                                letterSpacing: `${node.compiledValue}`,
+                                fontWeight: 700,
+                                fontSize: "2rem",
+                                marginBottom: "16px",
                             }}
                         >
-                            tracking({node.name})
-                        </span>
-                    </p>
-                ))}
-            </div>
+                            Tracking {node.compiledValue}
+                            <span
+                                style={{
+                                    letterSpacing: "normal",
+                                    fontSize: "1.125rem",
+                                    marginLeft: "14px",
+                                }}
+                            >
+                                tracking({node.name})
+                            </span>
+                        </p>
+                    ))}
+                </div>
+            </Canvas>
 
             <table
                 className="docblock-argstable css-6hhrgj"
