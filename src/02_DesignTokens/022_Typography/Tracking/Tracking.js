@@ -31,7 +31,15 @@ const Tracking = () => {
             >
                 {TokenName} Tokens
             </h2>
-            <p className="css-1p8ieni">Description.</p>
+            <p className="css-1p8ieni">
+                Tracking is the horizontal spacing between type characters which
+                is set using the `letter-spacing` CSS property. Positive values
+                of `letter-spacing` cause characters to spread farther apart,
+                while negative values bring characters closer together. In this
+                design system we set the tracking value using the `em` unit as
+                this is relative to the font size of the text (e.g 2em means 2
+                times the size of the current font).
+            </p>
 
             <Canvas
                 style={{
@@ -47,22 +55,15 @@ const Tracking = () => {
                     {data.designTokensJson.mapValue.map(node => (
                         <p
                             style={{
+                                textTransform: "capitalize",
                                 letterSpacing: `${node.compiledValue}`,
                                 fontWeight: 700,
                                 fontSize: "2rem",
                                 marginBottom: "16px",
                             }}
                         >
-                            Tracking {node.compiledValue}
-                            <span
-                                style={{
-                                    letterSpacing: "normal",
-                                    fontSize: "1.125rem",
-                                    marginLeft: "14px",
-                                }}
-                            >
-                                tracking({node.name})
-                            </span>
+                            {node.compiledValue.slice(0, -2)} {node.name}{" "}
+                            Tracking
                         </p>
                     ))}
                 </div>
