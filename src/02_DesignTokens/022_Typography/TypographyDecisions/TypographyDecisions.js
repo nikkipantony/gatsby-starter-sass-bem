@@ -1,12 +1,6 @@
 import React from "react"
 
 const TypographyDecisions = () => {
-    const Title = {
-        textTransform: "capitalize",
-        marginTop: "80px",
-        lineHeight: "1",
-    }
-
     return (
         <div
             style={{

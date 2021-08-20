@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Canvas } from "@storybook/addon-docs"
 
 const FontWeights = () => {
     const data = useStaticQuery(graphql`
@@ -18,63 +19,53 @@ const FontWeights = () => {
     const Name = VariableName.substring(1) // Remove `$` from variable name
     const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
 
-    const Title = {
-        textTransform: "capitalize",
-        marginTop: "80px",
-        marginBottom: "10px",
-        lineHeight: "1",
-    }
-
-    const TableHeading = {
-        textTransform: "capitalize",
-    }
-
     return (
         <>
-            <h2 style={Title}>{TokenName.slice(0, -1)} Tokens</h2>
-            <p className="css-1p8ieni">
-                The `font-weight` CSS property sets the weight (or boldness) of
-                a font.
-            </p>
-
-            <div
+            <h2
                 style={{
-                    marginBottom: "40px",
+                    textTransform: "capitalize",
+                    marginTop: "80px",
+                    marginBottom: "10px",
+                    lineHeight: "1",
                 }}
             >
-                <table
-                    className="docblock-argstable css-6hhrgj"
-                    style={{ textAlign: "left" }}
+                {TokenName.slice(0, -1)} Tokens
+            </h2>
+            <p className="css-1p8ieni">
+                Typeface families come with a range of possible font weights
+                (boldness). These typically have a scale from 100 (Thin) through
+                to 700 (Bold) and then to 900 (known as Black). By specifying
+                specific font weights to be used within the design system we
+                help simplify the typography of the system and help create
+                better uniformity throughout the UI as a whole.
+            </p>
+
+            <Canvas
+                style={{
+                    margin: "0",
+                }}
+            >
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
                 >
-                    <thead className="docblock-argstable-head">
-                        <tr>
-                            <th style={TableHeading}>{TokenName}</th>
-                        </tr>
-                    </thead>
-                    <tbody className="docblock-argstable-body">
-                        <tr>
-                            <td className="css-4lbn0a">
-                                <span className="css-in3yi3">
-                                    {data.designTokensJson.mapValue.map(
-                                        node => (
-                                            <p
-                                                style={{
-                                                    fontWeight: `${node.compiledValue}`,
-                                                    fontSize: "2rem",
-                                                    lineHeight: 1,
-                                                    marginBottom: "16px",
-                                                }}
-                                            >
-                                                Font Weight {node.compiledValue}
-                                            </p>
-                                        )
-                                    )}
-                                </span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    {data.designTokensJson.mapValue.map(node => (
+                        <p
+                            style={{
+                                textTransform: "capitalize",
+                                fontWeight: `${node.compiledValue}`,
+                                fontSize: "2rem",
+                                lineHeight: 1,
+                                marginBottom: "16px",
+                            }}
+                        >
+                            {node.compiledValue} {node.name} Font Weight
+                        </p>
+                    ))}
+                </div>
+            </Canvas>
 
             <table
                 className="docblock-argstable css-6hhrgj"
