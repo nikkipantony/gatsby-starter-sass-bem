@@ -18,7 +18,10 @@ const TypographyDecisions = () => {
             </h2>
             <p className="css-1p8ieni">
                 This section visually presents the type formatting decisions
-                made using the design tokens above for this design system.
+                made using the design tokens above and shows the correct use of
+                markup to be used as well as styling for consistency to create a
+                higher level of accessibility in products being built with this
+                system.
             </p>
 
             {/* Headings */}
@@ -219,13 +222,22 @@ const TypographyDecisions = () => {
                     </div>
                 </Canvas>
             </section>
+
+            {/* Emphasis */}
+
             <section
                 style={{
                     marginBottom: "40px",
                 }}
             >
                 <h3>Emphasis</h3>
-                <p className="css-1p8ieni">X</p>
+                <p className="css-1p8ieni">
+                    Emphasis in typography is the strengthening of words in text
+                    with the font of those words in a different style from the
+                    rest of the text. It is the equivalent of prosody stress in
+                    speech. The `em` element is used to highlight emphasis and
+                    can affect the meaning of the sentence itself.
+                </p>
 
                 <Canvas style={{ margin: "0" }}>
                     <div
@@ -234,7 +246,10 @@ const TypographyDecisions = () => {
                             flexDirection: "column",
                         }}
                     >
-                        <p>X</p>
+                        <p>
+                            This is an example of <em>emphasis</em> in text
+                            copy.
+                        </p>
                     </div>
                 </Canvas>
             </section>
