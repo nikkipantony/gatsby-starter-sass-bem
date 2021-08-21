@@ -115,19 +115,18 @@ ol {
     }
 }
 
-// Captions
+// Figure Captions
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
 // The <figcaption> element represents a caption or legend describing
 // the rest of the contents of its parent <figure> element.
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption
-// The <caption> element specifies the caption (or title) of a table.
-figcaption,
-caption {
+figcaption {
     font-size: font-size(cs);
     font-weight: font-weight(bold);
-    padding: spacing(l) spacing(xxs) spacing(xl);
     color: brand-color(midnight);
-    text-align: right;
+    font-style: italic;
+    opacity: opacity(o75);
+    line-height: leading(tall);
+    text-align: left;
 }
 
 // Microcopy

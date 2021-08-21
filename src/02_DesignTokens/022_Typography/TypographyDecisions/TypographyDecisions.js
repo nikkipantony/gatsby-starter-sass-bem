@@ -18,8 +18,10 @@ const TypographyDecisions = () => {
             </h2>
             <p className="css-1p8ieni">
                 This section visually presents the type formatting decisions
-                made using the design tokens above.
+                made using the design tokens above for this design system.
             </p>
+
+            {/* Headings */}
 
             <section
                 style={{
@@ -54,6 +56,8 @@ const TypographyDecisions = () => {
                 </Canvas>
             </section>
 
+            {/* Paragraphs */}
+
             <section
                 style={{
                     marginBottom: "40px",
@@ -79,25 +83,7 @@ const TypographyDecisions = () => {
                 </Canvas>
             </section>
 
-            <section
-                style={{
-                    marginBottom: "40px",
-                }}
-            >
-                <h3>X</h3>
-                <p className="css-1p8ieni">X</p>
-
-                <Canvas style={{ margin: "0" }}>
-                    <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                        }}
-                    >
-                        <p>X</p>
-                    </div>
-                </Canvas>
-            </section>
+            {/* Links */}
 
             <section
                 style={{
@@ -106,16 +92,16 @@ const TypographyDecisions = () => {
             >
                 <h3>Links</h3>
                 <p className="css-1p8ieni">
-                    The `a` element with its `href` attribute, creates a
-                    hyperlink know as a Anchor link to web pages, files, email
-                    addresses, locations in the same page, or anything else a
-                    URL can address. Content within each `a` should indicate the
-                    link's destination. Underline should only be used or text
-                    links and should never be used as a mechanism for adding
-                    emphasis. While using the Ally Design System Starter Kit you
-                    should create links either using the `InLink` Atom
-                    components for internal links or the `ExLink` Atom component
-                    for external links.
+                    The `a` element with its `href` attribute, create hyperlinks
+                    know as an Anchor link to web pages, files, email addresses,
+                    locations etc in the same page, or anywhere else a URL can
+                    address. Content within each `a` should indicate the link's
+                    destination. Underline should only be used for text links
+                    and should never be used as a mechanism for adding emphasis.
+                    While using this design system you should use the `ExLink`
+                    Atom component for external links, the `NavLink` component
+                    for navigation and the `SkipLink` to skip to main content to
+                    help improve accessibility.
                 </p>
 
                 <Canvas style={{ margin: "0" }}>
@@ -132,11 +118,7 @@ const TypographyDecisions = () => {
                 </Canvas>
             </section>
 
-            {/* Unordered and Ordered Lists
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
-// The <ul> element represents an unordered list of items, typically rendered as a bulleted list.
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
-// The <ol> element represents an ordered list of items — typically rendered as a numbered list. */}
+            {/* Lists */}
 
             <section
                 style={{
@@ -173,6 +155,202 @@ const TypographyDecisions = () => {
                     </div>
                 </Canvas>
             </section>
+
+            {/* Captions */}
+
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Captions</h3>
+                <p className="css-1p8ieni">
+                    The `figcaption` element represents a caption or legend
+                    describing the rest of the content of its parent `figure`
+                    element such as for an image. When using this design system
+                    you should use the `Figure` Atom component for this purpose.
+                </p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <figure>
+                        <div
+                            style={{
+                                display: "grid",
+                                width: "500px",
+                                height: "200px",
+                                boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0",
+                                border: "2px solid rgba(0, 0, 13, .4)",
+                                borderRadius: "4px",
+                                backgroundColor: "#f3f3f3",
+                            }}
+                        >
+                            <p style={{ margin: "auto" }}>Figure</p>
+                        </div>
+                        <figcaption>Example figure caption.</figcaption>
+                    </figure>
+                </Canvas>
+            </section>
+
+            {/* Microcopy */}
+
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Microcopy</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Emphasis</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Idiomatic Text</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Strong Importance</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Strikethrough</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Highlighting</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Quotations</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+
+            <section
+                style={{
+                    marginBottom: "40px",
+                }}
+            >
+                <h3>Citations</h3>
+                <p className="css-1p8ieni">X</p>
+
+                <Canvas style={{ margin: "0" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <p>X</p>
+                    </div>
+                </Canvas>
+            </section>
+
+            {/* // Abbreviations next */}
         </div>
     )
 }
