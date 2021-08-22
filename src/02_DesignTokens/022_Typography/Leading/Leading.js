@@ -21,24 +21,6 @@ const Leading = () => {
 
     return (
         <>
-            <h2
-                style={{
-                    textTransform: "capitalize",
-                    marginTop: "80px",
-                    marginBottom: "10px",
-                    lineHeight: "1",
-                }}
-            >
-                {TokenName} Tokens
-            </h2>
-            <p className="css-1p8ieni">
-                In Typography, leading is the space between adjacent lines of
-                type. In web development this is known as `line-height` and it
-                can be set using many different value types. In this design
-                system we use unit-less values where the number given is
-                multiplied by the element's font size.
-            </p>
-
             <Canvas
                 style={{
                     margin: "0",

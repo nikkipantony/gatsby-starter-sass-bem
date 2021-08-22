@@ -8,13 +8,15 @@ import Tracking from '../Tracking/Tracking';
 
 <Meta title="Design Tokens/Typography" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
 
-<h1>Typography</h1>
-<p>Typography is an important part of a design system that brings consistency across experiences and platforms. Good typography rules help present content clearly and efficiently as well as convey the overall brands style and tone.</p>
+# Typography Design Tokens
+Typography is an important part of a design system that brings consistency across experiences and platforms. Good typography rules help present content clearly and efficiently as well as convey the overall brands style and tone.
 
-<div style={{ marginTop: "30px", maxWidth: "500px", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", }}>
-<h2>Contents</h2>
+<div style={{ maxWidth: "500px", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", marginTop: "20px", }}>
+
+## Contents
+
 <nav>
-<ul style={{ marginTop: "30px", paddingLeft: "20px" }}>
+<ul style={{ marginTop: "20px", paddingLeft: "20px" }}>
     <li><a href="#Typefaces">Typeface Tokens</a></li>
     <li><a href="#FontSizes">Font Size Tokens</a></li>
     <li><a href="#FontWeights">Font Weight Tokens</a></li>
@@ -22,24 +24,71 @@ import Tracking from '../Tracking/Tracking';
     <li><a href="#Tracking">Tracking Tokens</a></li>
 </ul>
 </nav>
+
 </div>
 
-<section id="Typefaces">
+<div id="Typefaces" style={{ marginTop: "80px", }}></div>
+
+## Typeface Tokens
+
+A typeface is a set of characters of the same design. 
+These characters include letters, numbers, punctuation marks, 
+and symbols.
+
 <Typefaces />
-</section>
 
-<section id="FontSizes">
+
+<div id="FontSizes" style={{ marginTop: "80px", }}></div>
+
+## Font Size Tokens
+
+All font sizes in this design system have a ratio of 1.250, 
+known as the Major Third type scale. This means that each size is 
+multiplied or divided by 1.250 from the previous size, starting 
+with the base size (1rem / 16px), and rounded. Custom text 
+(any non-existing typography component) should use a font size 
+from this list.
+
 <FontSizes />
-</section>
 
-<section id="FontWeights">
+
+<div id="FontWeights" style={{ marginTop: "80px", }}></div>
+
+## Font Weight Tokens
+
+Typeface families come with a range of possible font weights
+(boldness). These typically have a scale from 100 (Thin) through
+to 700 (Bold) and then to 900 (known as Black). By specifying
+specific font weights to be used within the design system we
+help simplify the typography of the system and help create
+better uniformity throughout the UI as a whole.
+
 <FontWeights />
-</section>
 
-<section id="Leading">
+
+<div id="Leading" style={{ marginTop: "80px", }}></div>
+
+## Leading Tokens
+
+In Typography, leading is the space between adjacent lines of
+type. In web development this is known as `line-height` and it
+can be set using many different value types. In this design
+system we use unit-less values where the number given is
+multiplied by the element's font size.
+
 <Leading />
-</section>
 
-<section id="Tracking">
+
+<div id="Tracking" style={{ marginTop: "80px", }}></div>
+
+## Tracking Tokens
+
+Tracking is the horizontal spacing between type characters which
+is set using the `letter-spacing` CSS property. Positive values
+of `letter-spacing` cause characters to spread farther apart,
+while negative values bring characters closer together. In this
+design system we set the tracking value using the `em` unit as
+this is relative to the font size of the text (e.g 2em means 2
+times the size of the current font).
+
 <Tracking />
-</section>

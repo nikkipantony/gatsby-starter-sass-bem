@@ -10,6 +10,28 @@ markup to be used as well as styling for consistency to create a
 higher level of accessibility in products being built with this
 system.
 
+<div style={{ maxWidth: "500px", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", marginTop: "20px", }}>
+
+## Contents
+
+<nav>
+<ul style={{ marginTop: "20px", paddingLeft: "20px" }}>
+    <li><a href="#Headings">Headings</a></li>
+    <li><a href="#Paragraphs">Paragraphs</a></li>
+    <li><a href="#Links">Links</a></li>
+    <li><a href="#Lists">Lists</a></li>
+    <li><a href="#FigureCaptions">Figure Captions</a></li>
+    <li><a href="#Microcopy">Microcopy</a></li>
+    <li><a href="#Emphasis">Emphasis</a></li>
+    <li><a href="#Idiomatic">Idiomatic Text</a></li>
+    <li><a href="#Strong">Strong Importance</a></li>
+</ul>
+</nav>
+
+</div>
+
+<div id="Headings" style={{ marginTop: "80px", }}></div>
+
 ## Headings
 
 The `h1` to `h6` elements represent six levels of section
@@ -20,16 +42,19 @@ will not result in an error, but using only one is seen as a
 best practice. Having a single top-level title is also
 arguably better for screenreader users, and for SEO.
 
-<Canvas>
-    <div style={{ display: "flex", flexDirection: "column", }}>
-        <h1>H1 Heading</h1>
-        <h2>H2 Heading</h2>
-        <h3>H3 Heading</h3>
-        <h4>H4 Heading</h4>
-        <h5>H5 Heading</h5>
-        <h6>H6 Heading</h6>
-    </div>
+<Canvas style={{ margin: "0", }}>
+<div style={{ display: "flex", flexDirection: "column", }}>
+<h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6>
+</div>
 </Canvas>
+
+
+<div id="Paragraphs" style={{ marginTop: "80px", }}></div>
 
 ## Paragraphs
 
@@ -38,9 +63,12 @@ represented in visual media as blocks of text structured to
 group related content and separate them from adjacent blocks
 by blank lines and/or first-line indentation.
 
-<Canvas>
-    <p>This is a paragraph body text example.</p>
+<Canvas style={{ margin: "0", }}>
+<p>This is a paragraph body text example.</p>
 </Canvas>
+
+
+<div id="Links" style={{ marginTop: "80px", }}></div>
 
 ## Links
 
@@ -55,9 +83,12 @@ Atom component for external links, the `NavLink` component
 for navigation and the `SkipLink` to skip to main content to
 help improve accessibility.
 
-<Canvas>
-    <p>This is an <a href="#">Anchor link</a> example.</p>
+<Canvas style={{ margin: "0", }}>
+<p>This is an <a href="#">Anchor link</a> example.</p>
 </Canvas>
+
+
+<div id="Lists" style={{ marginTop: "80px", }}></div>
 
 ## Lists
 
@@ -67,18 +98,21 @@ represents an ordered list of items renders as a numbered
 list. Lists should either be part of a section with other
 text for context or have a section heading.
 
-<Canvas>
-    <ul>
-        <li>This is an unordered list example</li>
-        <li>List items that are not in an order</li>
-        <li>It is just a list of items</li>
-    </ul>
-    <ol>
-        <li>This is an example of an ordered list</li>
-        <li>Items have a hierarchy</li>
-        <li>Items are shown with a number</li>
-    </ol>
+<Canvas style={{ margin: "0", }}>
+<ul>
+<li>This is an unordered list example</li>
+<li>List items that are not in an order</li>
+<li>It is just a list of items</li>
+</ul>
+<ol>
+<li>This is an example of an ordered list</li>
+<li>Items have a hierarchy</li>
+<li>Items are shown with a number</li>
+</ol>
 </Canvas>
+
+
+<div id="FigureCaptions" style={{ marginTop: "80px", }}></div>
 
 ## Figure Captions
 
@@ -87,26 +121,15 @@ describing the rest of the content of its parent `figure`
 element such as for an image. When using this design system
 you should use the `Figure` Atom component for this purpose.
 
-<Canvas>
+<Canvas style={{ margin: "0", }}>
 <figure>
-    {/* Replace with figure */}
-    <div
-        style={{
-            display: "grid",
-            width: "500px",
-            height: "200px",
-            boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0",
-            border: "2px solid rgba(0, 0, 13, .4)",
-            borderRadius: "4px",
-            backgroundColor: "#f3f3f3",
-        }}
-    >
-        <p style={{ margin: "auto" }}>Figure</p>
-    </div>
-    {/* Replace with figure */}
-        <figcaption>Example figure caption.</figcaption>
+<img src="https://via.placeholder.com/300x200.png?text=Figure+Placeholder" alt="figure placeholder" />
+<figcaption>Example figure caption.</figcaption>
 </figure>
 </Canvas>
+
+
+<div id="Microcopy" style={{ marginTop: "80px", }}></div>
 
 ## Microcopy
 
@@ -115,11 +138,12 @@ small print, such as copyright and legal text. The `small`
 element should be used in favour instead of simply a smaller
 font size for it's semantic meaning.
 
-<Canvas>
-    <div>
-        <p><small>Microcopy text example.</small></p>
-    </div>
+<Canvas style={{ margin: "0", }}>
+<p><small>Microcopy text example.</small></p>
 </Canvas>
+
+
+<div id="Emphasis" style={{ marginTop: "80px", }}></div>
 
 ## Emphasis
 
@@ -129,11 +153,12 @@ rest of the text. It is the equivalent of prosody stress in
 speech. The `em` element is used to highlight emphasis and
 can affect the meaning of the sentence itself.
 
-<Canvas>
-    <div>
-        <p>This is an example of <em>emphasis</em> in text copy.</p>
-    </div>
+<Canvas style={{ margin: "0", }}>
+<p>This is an example of <em>emphasis</em> in text copy.</p>
 </Canvas>
+
+
+<div id="Idiomatic" style={{ marginTop: "80px", }}></div>
 
 ## Idiomatic Text
 
@@ -145,79 +170,82 @@ identify the language). The `i` element should be used to
 represent this text to help convey meaning when using this
 system.
 
-<Canvas>
-    <div>
-        <p>
-            Examples of <i>idiomatic text</i> could include... <br />
-            "She wondered, <i>What is this writer talking about, anyway?</i>" <br />
-            or <br />
-            "The Latin phrase <i>Veni, vidi, vici</i> is often
-            mentioned in music, art, and literature."
-        </p>
-    </div>
+<Canvas style={{ margin: "0", }}>
+<p>Examples of <i>idiomatic text</i> could include... <br /> "She wondered, <i>What is this writer talking about, anyway?</i>" <br /> or <br /> "The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature."</p>
 </Canvas>
+
+
+<div id="Strong" style={{ marginTop: "80px", }}></div>
 
 ## Strong Importance
 
 The `strong` element indicates that its contents has a
 strong importance, seriousness, or urgency.
 
-<Canvas>
-    <div>
-        <p>
-            An example of a sentence that could use the
-            <strong>strong</strong> element is... <br />
-            "before proceeding, <strong> make sure you put 
-            on your safety goggles</strong>."
-        </p>
-    </div>
+<Canvas style={{ margin: "0", }}>
+<p>An example of a sentence that could use the <strong>strong</strong> element is... <br /> "before proceeding, <strong> make sure you put on your safety goggles</strong>."</p>
 </Canvas>
+
+
+<div id="Strike" style={{ marginTop: "80px", }}></div>
 
 ## Strike Through
 
 X
 
-<Canvas>
+<Canvas style={{ margin: "0", }}>
     <div>
         <p>x</p>
     </div>
 </Canvas>
+
+
+<div id="Highlighting" style={{ marginTop: "80px", }}></div>
 
 ## Highlighting
 
 X
 
-<Canvas>
+<Canvas style={{ margin: "0", }}>
     <div>
         <p>x</p>
     </div>
 </Canvas>
+
+
+<div id="Quotations" style={{ marginTop: "80px", }}></div>
 
 ## Quotations
 
 X
 
-<Canvas>
+<Canvas style={{ margin: "0", }}>
     <div>
         <p>x</p>
     </div>
 </Canvas>
+
+
+<div id="Citations" style={{ marginTop: "80px", }}></div>
 
 ## Citations
 
 X
 
-<Canvas>
+<Canvas style={{ margin: "0", }}>
     <div>
         <p>x</p>
     </div>
 </Canvas>
 
+
+<div id="abbr" style={{ marginTop: "80px", }}></div>
+
 ## Abbreviations
 
 X
 
-<Canvas>
+<Canvas style={{ margin: "0", }}>
     <div>
         <p>x</p>
     </div>

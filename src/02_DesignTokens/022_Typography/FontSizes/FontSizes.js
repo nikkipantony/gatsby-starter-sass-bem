@@ -21,25 +21,6 @@ const FontSizes = () => {
 
     return (
         <>
-            <h2
-                style={{
-                    textTransform: "capitalize",
-                    marginTop: "80px",
-                    marginBottom: "10px",
-                    lineHeight: "1",
-                }}
-            >
-                {TokenName.slice(0, -1)} Tokens
-            </h2>
-            <p className="css-1p8ieni">
-                All font sizes in this design system have a ratio of 1.250,
-                known as the Major Third type scale. This means that each size
-                is multiplied or divided by 1.250 from the previous size,
-                starting with the base size (1rem / 16px), and rounded. Custom
-                text (any non-existing typography component) should use a font
-                size from this list.
-            </p>
-
             <Canvas
                 style={{
                     margin: "0",

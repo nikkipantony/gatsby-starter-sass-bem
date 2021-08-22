@@ -21,25 +21,6 @@ const FontWeights = () => {
 
     return (
         <>
-            <h2
-                style={{
-                    textTransform: "capitalize",
-                    marginTop: "80px",
-                    marginBottom: "10px",
-                    lineHeight: "1",
-                }}
-            >
-                {TokenName.slice(0, -1)} Tokens
-            </h2>
-            <p className="css-1p8ieni">
-                Typeface families come with a range of possible font weights
-                (boldness). These typically have a scale from 100 (Thin) through
-                to 700 (Bold) and then to 900 (known as Black). By specifying
-                specific font weights to be used within the design system we
-                help simplify the typography of the system and help create
-                better uniformity throughout the UI as a whole.
-            </p>
-
             <Canvas
                 style={{
                     margin: "0",

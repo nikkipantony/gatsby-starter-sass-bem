@@ -21,26 +21,6 @@ const Tracking = () => {
 
     return (
         <>
-            <h2
-                style={{
-                    textTransform: "capitalize",
-                    marginTop: "80px",
-                    marginBottom: "10px",
-                    lineHeight: "1",
-                }}
-            >
-                {TokenName} Tokens
-            </h2>
-            <p className="css-1p8ieni">
-                Tracking is the horizontal spacing between type characters which
-                is set using the `letter-spacing` CSS property. Positive values
-                of `letter-spacing` cause characters to spread farther apart,
-                while negative values bring characters closer together. In this
-                design system we set the tracking value using the `em` unit as
-                this is relative to the font size of the text (e.g 2em means 2
-                times the size of the current font).
-            </p>
-
             <Canvas
                 style={{
                     margin: "0",
