@@ -39,10 +39,13 @@ const Leading = () => {
                                 lineHeight: `${node.compiledValue}`,
                                 fontWeight: 700,
                                 fontSize: "2rem",
-                                marginBottom: "16px",
-                                color: "#fefefe",
-                                background: "#000013",
                                 maxWidth: "500px",
+                                color: "#000013",
+                                background: "rgba(0, 0, 19, .1)",
+                                borderTop: "2px solid #000013",
+                                borderBottom: "2px solid #000013",
+                                padding: "0 10px",
+                                marginBottom: "16px",
                             }}
                         >
                             {node.compiledValue} {node.name} Leading

@@ -16,4 +16,25 @@ import theme from "./theme"
 addons.setConfig({
     // Use local custom storybook theme
     theme: theme,
+    showNav: true,
+    initialActive: "sidebar",
+    sidebar: {
+        showRoots: true,
+        collapsedRoots: [
+            "foundations",
+            "design-tokens",
+            "atoms",
+            "molecules",
+            "organisms",
+            "templates",
+            "pages",
+        ],
+    },
+    toolbar: {
+        title: { hidden: false },
+        zoom: { hidden: false },
+        eject: { hidden: false },
+        copy: { hidden: false },
+        fullscreen: { hidden: false },
+    },
 })
