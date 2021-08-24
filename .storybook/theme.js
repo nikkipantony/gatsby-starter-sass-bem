@@ -45,7 +45,7 @@ export default create({
 
     // Branding
     brandTitle: "Ally Design System Starter Kit",
-    brandUrl: "https://ally-starter-kit.github.io",
+    brandUrl: "/?path=/story/get-started-introduction--page",
 
     // Replace brand title with image
     // brandImage: "https://placehold.it/350x150",
