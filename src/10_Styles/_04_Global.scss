@@ -6,7 +6,8 @@
 // Set the root font-size for REMs
 :root {
     font-size: 16px;
-    scroll-behavior: smooth !important; /* !important used so it is not overwritten in Storybook */
+    scroll-behavior: smooth !important; // scss-lint:disable-line
+    /* !important used so it is not overwritten in Storybook */
 }
 
 // Set Body Background Color

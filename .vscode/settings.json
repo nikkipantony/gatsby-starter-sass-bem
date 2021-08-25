@@ -34,12 +34,12 @@
 		"*.js": "react"
 	},
 
+	"scss.validate": true,
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.unknownProperties": "warning",
 	"scss.lint.unknownAtRules": "warning",
 	"scss.lint.emptyRules": "warning",
-	"scss.lint.important": "warning",
-	"scss.validate": true,
+	"scss.lint.important": "ignore",
 
 	"html.format.endWithNewline": true,
 	"html.format.indentInnerHtml": true,
